@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+- In ra các phần tử trong mảng
+- In ra các phần tử trong mảng, mỗi phần tử trong 1 thẻ h1
+- In ra các phần tử chia hết cho 3 trong h1
+- In ra các phần tử chia hết cho 3 trong h3, chia hết cho 5 trong h2, chia hết cho 3 và 5 trong h1
+- Tính tổng các phần tử trong mảng
+- Tính tích các phần tử trong mảng
+- Đếm số các phần tử chẵn
+- Tính TBC các phần tử chẵn
+- Tìm max trong mảng
+-->
+<script>
+    let hung = [2, 7, 1, 4, 8, 3, 2, 5, 10, 15, 18];
+    let y = 0;
+    let tong = 0;
+    for (let i = 0; i < hung.length; i++) {
+        if (hung[i] % 2 == 0) {
+            y++;
+            tong += hung[i];
+        }
+    }
+    document.write('Số phần tử chẵn là: ' + tong / y);
+
+
+</script>
+<!--
+    - Tìm số lớn thứ 2, dùng 1 for
+    - Liệt kê các phần tử trùng lặp
+    - Tìm ra chuỗi liên tiếp tăng dần nhiều phần tử nhất
+    -->
+</body>
+</html>

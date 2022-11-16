@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let d = +prompt("Nhập vào điểm: ");
+    if (d < 5 && d >= 0) {
+        alert('yếu')
+    }
+    if (d > 5 && d < 8) {
+        alert('khá')
+    }
+    if (d > 8 && d < 10) {
+        alert('giỏi')
+    }
+    if (d < 0 || d > 10) {
+        alert('vô lý')
+    }
+
+    if (d++ > 10 & --d < 10) {
+        d++
+    }
+    alert(d)
+    if (d++ > 10 && --d < 10) {
+        d++
+    }
+    alert(d)
+</script>
+</body>
+</html>

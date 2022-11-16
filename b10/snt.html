@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Số nguyên tố-->
+<script>
+    let so = +prompt("Nhập vào số: ");
+    let kq = 'Là số nguyên tố';
+    for (let i = 2; i < so; i++) {
+        if (so % i == 0) {
+            kq = 'Không phải số nguyên tố';
+        }
+    }
+    alert(kq);
+</script>
+</body>
+</html>

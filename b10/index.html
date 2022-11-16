@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--In ra 1000 chữ 'Hello'-->
+<!--In ra n chữ 'Hello', n nhập vào-->
+<!--In ra các số từ 0 -> n, n nhập vào-->
+<!--In ra các số từ m -> n, m, n nhập vào-->
+<!--In ra các số chẵn từ m -> n, m, n nhập vào-->
+<!--Tính tổng các số từ m -> n, m, n nhập vào-->
+<!--Tính tổng các số chia 5 dư 3 từ m -> n, m, n nhập vào-->
+<!--Tính tích các số chia 5 dư 3 từ m -> n, m, n nhập vào-->
+<!--Đếm các số chia 5 dư 3 và lớn hơn 10 từ m -> n, m, n nhập vào-->
+<!--Tính TBC các số chia 5 dư 3 và lớn hơn 10 từ m -> n, m, n nhập vào-->
+<script>
+    let m = +prompt("Nhập vào: ")
+    let n = +prompt("Nhập vào: ")
+    let soLuong = 0;
+    let tong = 0;
+    for (let i = m; i <= n; i++) {
+        if (i % 5 == 3 && i > 10) {
+            soLuong++;
+            tong += i;
+        }
+    }
+    document.write(tong/soLuong);
+</script>
+</body>
+</html>
