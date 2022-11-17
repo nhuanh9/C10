@@ -15,18 +15,18 @@
 - Đếm số các phần tử chẵn
 - Tính TBC các phần tử chẵn
 - Tìm max trong mảng
+- Nhập vào a, tìm vị trí a trong mảng.
 -->
 <script>
     let hung = [2, 7, 1, 4, 8, 3, 2, 5, 10, 15, 18];
-    let y = 0;
-    let tong = 0;
+    let a = +prompt('Nhập vào số cần tìm:')
+    let viTri;
     for (let i = 0; i < hung.length; i++) {
-        if (hung[i] % 2 == 0) {
-            y++;
-            tong += hung[i];
+        if (hung[i] == a) {
+            viTri = i;
         }
     }
-    document.write('Số phần tử chẵn là: ' + tong / y);
+    alert('Vị trí của a là: '+viTri);
 
 
 </script>
