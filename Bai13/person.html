@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Person {
+        name;
+        age;
+        score;
+
+        say() {
+            alert('Helo')
+        }
+
+        move() {
+
+        }
+
+        constructor(name, age, score) {
+            this.name = name;
+            this.age = age;
+            this.score = score;
+        }
+
+        toString() {
+            return this.name + " " + this.age + " " + this.score;
+        }
+    }
+
+    let p1 = new Person('Anh', 25, 9);
+    let p2 = new Person('Ys', 24, 10);
+    let p3 = new Person('Hung', 23, 10);
+    let p4 = new Person('Sangs', 22, 10);
+</script>
+</body>
+</html>

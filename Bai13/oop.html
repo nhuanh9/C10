@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Product {
+        name; price; category; quantity; color;
+
+        constructor(name, price, category, quantity, color) {
+            this.name = name;
+            this.price = price;
+            this.category = category;
+            this.quantity = quantity;
+            this.color = color;
+        }
+    }
+    let listProduct = [];
+    listProduct.push(new Product('IP13', 1500, 'A', '1000', 'Red'));
+    listProduct.push(new Product('SS12', 1800, 'S', '1000', 'Blue'));
+    listProduct.push(new Product('IP14', 1700, 'A', '1000', 'Red'));
+    let str = '';
+    for (let i=0; i<listProduct.length; i++) {
+        str+= `<div>${listProduct[i].name},
+                ${listProduct[i].price},
+                ${listProduct[i].category}
+                </div>`
+    }
+    document.write(str)
+</script>
+</body>
+</html>

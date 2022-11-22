@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let listName = [];
+    listName.push('IP14');
+    listName.push('IP13');
+    listName.push('SS12');
+    let listPrice = [];
+    listPrice.push(1600);
+    listPrice.push(1700);
+    listPrice.push(1500);
+    let listCategory = [];
+    listCategory.push('A');
+    listCategory.push('S');
+    listCategory.push('A');
+    let str = ""
+    for(let i = 0; i < listName.length; i++){
+        str += `<div>${listName[i]},
+                   ${listPrice[i]},
+                    ${listCategory[i]}</div>`
+    }
+    document.write(str)
+</script>
+</body>
+</html>
