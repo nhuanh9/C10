@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Tạo lớp mèo: tên, cân nặng. Ăn: tăng cân nặng lên 2;
+Tạo lớp chuột: tên, cân nặng
+-->
+<script>
+    class Cat {
+        name;
+        weight;
+        constructor(name, weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+        eat(m) {
+            document.write('Đang cắn!<hr>')
+            this.weight += 2
+            m.weight -= 1;
+        }
+        getIn4() {
+            document.write('Chú mèo ' + this.name + ' nặng ' + this.weight+" ");
+        }
+    }
+    class Mouse {
+        name;
+        weight;
+
+        constructor(name, weight) {
+            this.name = name;
+            this.weight = weight;
+        }
+
+        //nếu cân nặng ==0: Thì thông báo: 'RIP'
+        getIn4() {
+            if (this.weight == 0) {
+                document.write('rip');
+            } else {
+                document.write('Chú chuột ' + this.name + ' nặng ' + this.weight+" ");
+            }
+
+        }
+    }
+
+    // Eat: ăn chuột, mỗi lần ăn thì: mèo tăng 2, chuột giảm 1
+
+    let s = new Cat('Sáng', 20);
+    let t = new Mouse('Tối', 5);
+    let l = new Cat('Lan', 19);
+    let d = new Mouse('Điệp', 8);
+    s.getIn4()
+    t.getIn4()
+    l.getIn4();
+    d.getIn4();
+    s.eat(t);
+
+</script>
+</body>
+</html>
